@@ -42,6 +42,6 @@ kmeans_final = KMeans(n_clusters=5, random_state=0, n_init="auto").fit_predict(d
 df['Cluster'] = kmeans_final
 df_cluster['Cluster'] = kmeans_final
 
-#print(df['Cluster'].value_counts())
-#print(df.groupby('Cluster')[['Age', 'Purchase Amount (USD)', 'Review Rating', 'Previous Purchases']].mean())
+print(df['Cluster'].value_counts())
+print(df.groupby('Cluster')[['Age', 'Purchase Amount (USD)', 'Review Rating', 'Previous Purchases']].mean())
 print(df_cluster.groupby('Cluster')[['Subscription Status', 'Discount Applied', 'Frequency of Purchases', 'Gender']].mean())

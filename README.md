@@ -52,10 +52,14 @@ A curva deixa de cair bruscamente por volta do **K=3**, mas continua descendo su
 Após rodar o modelo com 5 clusters, verificamos se a divisão foi saudável.
 
 **Resultado:**
-<div align="center">
-  <img src="img/Distribuicao_Clusters.png" alt="Contagem de Clusters" width="400">
-</div>
-<br>
+```text
+  Cluster  Count
+    0       986
+    1       932
+    2       821
+    3       779
+    4       382
+```
 
 **Veredito:**
 Os grupos ficaram bem balanceados (maioria entre 700-900 pessoas), com exceção do **Cluster 4** (aprox. 380 pessoas). Isso indicou a presença de um "Nicho Específico" que o modelo isolou propositalmente.
