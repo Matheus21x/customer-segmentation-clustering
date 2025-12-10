@@ -44,7 +44,7 @@ Quantos tipos de clientes existem? Para responder isso matematicamente, testamos
 <br>
 
 **Conclusão da Análise:**
-A curva deixa de cair bruscamente por volta do **K=3**, mas continua descendo suavemente. Optamos por **K=5** para capturar mais nuances de comportamento (como clientes VIPs vs Clientes Novos), evitando generalizações excessivas que ocorreriam com apenas 3 grupos.
+A curva deixa de cair bruscamente por volta do **K=3**, mas continua descendo suavemente. Optou-se por **K=5** para capturar mais nuances de comportamento (como clientes VIPs vs Clientes Novos), evitando generalizações excessivas que ocorreriam com apenas 3 grupos.
 
 ---
 
@@ -76,12 +76,13 @@ Cluster     Age         Purchase Amount (USD)  Review Rating    Previous Purchas
 2        46.246041              60.123021       3.716443           36.629720
 3        42.080873              58.667522       3.762901           14.204108
 4        44.138743              58.921466       3.749476           25.392670
+```
 
 **Insight:** Percebemos que `Age` (Idade) e `Rating` são praticamente iguais em todos os grupos. O diferencial financeiro está no **Cluster 0 (Gasto Alto: $80)** e **Cluster 1 (Gasto Baixo: $39)**.
 
 <br>
 
-#### B. Perfil Comportamental 
+#### B. Perfil Comportamental
 *Aqui descobrimos os hábitos que realmente diferenciam os clientes.*
 
 ```text
@@ -91,7 +92,7 @@ Cluster      Subscription Status    Discount Applied    Frequency of Purchases  
 2                   0.791717          1.000000               18.641900               1.000000
 3                   0.517330          1.000000               13.005135               1.000000
 4                   0.000000          0.201571               52.000000               0.549738
-
+```
 
 **Insight Revelador:**
 O **Cluster 4** tem frequência **52.0**, ou seja, compram **toda semana**! Já os **Clusters 2 e 3** são compostos 100% por homens (`Gender = 1`) que usam descontos em 100% das compras.
