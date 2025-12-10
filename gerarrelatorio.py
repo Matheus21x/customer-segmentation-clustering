@@ -1,5 +1,5 @@
-from main import df, df_cluster
+from main import df
 from ydata_profiling import ProfileReport
 
 profile = ProfileReport(df, title="Relatorio Loja", explorative=True)
-profile.to_file("RelatorioLoja.html")
+profile.to_file("RelatorioLojaAtt.html")
